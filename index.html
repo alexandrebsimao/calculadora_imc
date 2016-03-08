@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Calculadora IMC">
+	<meta name="keywords" content="imc, indice de massa corporal, calculadora">
+	<meta name="author" content="Alexandre A. B. Simão">
+
+	<title>Calculadora IMC </title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<section>
+		<div class="container-index">
+			<div class="title">
+				<h4>Calcule o seu</h4>
+				<h1>IMC</h1>
+			</div>
+			<div class="container-form">
+				<form action="#" id="form-imc">
+					<fieldset>
+						<label for="peso">Qual seu peso?</label>
+						<input type="text" name="peso" id="peso" maxlength="6" placeholder="0,00 kg">
+						<button type="button" class="next"></button>
+					</fieldset>
+					<fieldset>
+						<label for="altura">Qual sua altura?</label>
+						<input type="text" name="altura" id="altura" maxlength="4" placeholder="0,00 m">
+						<button type="button" class="next"></button>
+					</fieldset>
+					<fieldset>
+						<label for="idade">Qual sua idade?</label>
+						<input type="text" name="idade" id="idade" maxlength="3" placeholder="0 anos">
+						<button type="button" class="end"></button>
+					</fieldset>
+					<div class="progress"></div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

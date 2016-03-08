@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Calculadora IMC">
+	<meta name="keywords" content="imc, indice de massa corporal, calculadora">
+	<meta name="author" content="Alexandre A. B. Simão">
+
+	<title>Calculadora IMC </title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<section>
+		<div class="container-resultado">
+			<div class="title">
+				<h4>Seu IMC é</h4>
+				<h1 id="imc">0</h1>
+			</div>
+		</div>
+		<div id="resultado"></div>
+		<div class="container-tabela">
+			<button class="btn-info" id="btn-classificacao">Confira a tabela de classificação</button>
+			<br style="clear:both;">
+
+			<div id="classificacao">
+				<div class="col-table">
+					<h3>Crianças e Jovens <small>(até 20 anos)</small></h3>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<th width="250">CLASSIFICAÇÃO</th>
+							<th>IMC</th>
+						</tr>
+						<tr>
+							<td>Baixo peso</td>
+							<td>< 18,5</td>
+						</tr>
+						<tr>
+							<td>Eutrofia (peso ideal)</td>
+							<td>18,5 a 24,9</td>
+						</tr>
+						<tr>
+							<td>Excesso de peso</td>
+							<td>25 a 29,9</td>
+						</tr>
+						<tr>
+							<td>Obesidade</td>
+							<td>>30</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-table center">
+					<h3>Adultos <small>(entre 21 e 65 anos)</small></h3>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<th width="250">CLASSIFICAÇÃO</th>
+							<th>IMC</th>
+						</tr>
+						<tr>
+							<td>Baixo peso</td>
+							<td>< 18,5</td>
+						</tr>
+						<tr>
+							<td>Eutrofia (peso ideal)</td>
+							<td>18,5 a 24,9</td>
+						</tr>
+						<tr>
+							<td>Pré-obesidade</td>
+							<td>25 a 29,9</td>
+						</tr>
+						<tr>
+							<td>Obesidade, grau I</td>
+							<td>30 a 34,9</td>
+						</tr>
+						<tr>
+							<td>Obesidade, grau II</td>
+							<td>35 39,9</td>
+						</tr>
+						<tr>
+							<td>Obesidade mórbida</td>
+							<td>>=40</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-table">
+					<h3>Idosos <small>(a partir de 60 anos)</small></h3>
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr width="250">
+							<th>CLASSIFICAÇÃO</th>
+							<th>IMC</th>
+						</tr>
+						<tr>
+							<td>Desnutrição</td>
+							<td>< 22</td>
+						</tr>
+						<tr>
+							<td>Risco de desnutrição</td>
+							<td>22 a 23,9</td>
+						</tr>
+						<tr>
+							<td>Eutrofia (peso ideal)</td>
+							<td>24 a 26,9</td>
+						</tr>
+						<tr>
+							<td>Pré-obesidade</td>
+							<td>27 a 32</td>
+						</tr>
+						<tr>
+							<td>Obesidade</td>
+							<td>>32</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="js/result.js"></script>
+
+</body>
+</html>
